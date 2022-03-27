@@ -1,0 +1,89 @@
+/* CSS HEX
+--eerie-black: #222222;
+--xanthic: #f2f230;
+--international-orange-engineering: #ba2d0b;
+--light-gray: #cccccc;*/
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #cccccc;
+  background-color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f230;
+}
+
+a:hover,
+a:active {
+  color: #ba2d0b;
+}
+
+/* Header Styles */
+header {
+  color: #f2f230;
+  height: 250px;
+  background-image: url("../images/bt-banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header div {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 8px #222222 inset; /*blurred edges on background image*/
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav ul li {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+  header {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  header {
+    height: auto;
+    background-image: none;
+    background-color: #000;
+  }
+  header div {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
