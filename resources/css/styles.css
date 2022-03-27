@@ -99,6 +99,7 @@ main {
 }
 
 /* Responsive Styles */
+
 @media only screen and (max-width: 1200px) {
   header {
     background-size: cover;
@@ -111,8 +112,13 @@ main {
     background-image: none;
     background-color: #000;
   }
+
   header div {
     box-shadow: none;
+  }
+
+  main {
+    width: 100%;
   }
 }
 
@@ -125,7 +131,21 @@ main {
     font-size: 1.5rem;
   }
 
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
   nav ul {
     flex-wrap: wrap;
+  }
+
+  .col2-small {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
   }
 }
