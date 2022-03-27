@@ -82,12 +82,23 @@ section {
   margin: 25px 0;
 }
 
+/* Testimony section */
+.testimony {
+  border: 3px solid #ccc;
+  height: 230px;
+  padding: 8px;
+}
+
+.testimony h4 {
+  color: #f2f230;
+}
+
 /* Grid Styles */
 .grid-container {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 32px;
 }
@@ -96,9 +107,21 @@ section {
   align-self: center;
 }
 
-.col2 {
+.col2-l {
   grid-column-start: 1;
   grid-column-end: 3;
+  align-self: center;
+}
+
+.col2-r {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  align-self: center;
+}
+
+.col4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
   align-self: center;
 }
 
@@ -148,7 +171,7 @@ section {
     flex-wrap: wrap;
   }
 
-  .col2-small {
+  .col4-small {
     grid-column-start: 1;
     grid-column-end: 3;
     align-self: center;
