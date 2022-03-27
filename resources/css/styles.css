@@ -148,6 +148,18 @@ section {
     width: 100%;
     min-width: 350px;
   }
+
+  .col2-medium-l {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+  }
+
+  .col2-medium-r {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    align-self: center;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -171,9 +183,25 @@ section {
     flex-wrap: wrap;
   }
 
-  .col4-small {
+  .testimony {c;
+    height: 150px;
+  }
+
+  .col2-small-l {
     grid-column-start: 1;
     grid-column-end: 3;
+    align-self: center;
+  }
+
+  .col2-small-r {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    align-self: center;
+  }
+
+  .col4-small {
+    grid-column-start: 1;
+    grid-column-end: 5;
     align-self: center;
   }
 
