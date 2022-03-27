@@ -85,7 +85,7 @@ section {
 /* Testimony section */
 .testimony {
   border: 3px solid #ccc;
-  height: 230px;
+  height: 290px;
   padding: 8px;
 }
 
@@ -108,6 +108,16 @@ textarea {
 
 button {
   margin-top: 15px;
+}
+
+/* footer */
+footer {
+  padding: 0 15px;
+  background-color: #000;
+}
+
+.right-aligned {
+  justify-self: end;
 }
 
 /* Grid Styles */
@@ -176,6 +186,10 @@ button {
     grid-column-start: 3;
     grid-column-end: 5;
     align-self: center;
+  }
+
+  .testimony {
+    height: 215px;
   }
 }
 
