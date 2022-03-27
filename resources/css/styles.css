@@ -12,6 +12,19 @@ html {
   background-color: #222222;
 }
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #f2f230;
@@ -54,6 +67,35 @@ nav ul li {
   text-align: center;
   font-weight: bold;
   padding: 8px;
+}
+
+/* Main Styles */
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Grid Styles */
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 32px;
+}
+
+.col1 {
+  align-self: center;
+}
+
+.col2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-self: center;
 }
 
 /* Responsive Styles */
